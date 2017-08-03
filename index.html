@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Graph | Documentation</title>
+  <title>ccNetViz | Implementations</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
@@ -47,7 +47,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Graph</b> Documentation</span>
+      <span class="logo-lg"><b>ccNetViz</b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top" role="navigation">
@@ -58,8 +58,7 @@
       <!-- Navbar Right Menu -->
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          <li><a target="_blank" href="https://vchilkuri.github.io/">Github</a></li>
-          <li><a target="_blank" href="#">Help Desk</a></li>
+          <li><a target="_blank" href="https://github.com/HelikarLab/ccNetViz">Github</a></li>
         </ul>
       </div>
     </nav>
@@ -71,7 +70,7 @@
 
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="nav sidebar-menu" id="main_sidebar">
-        <li class="header">Table of Contents</li>
+        <li class="header">List of Examples</li>
         <li class="active"><a href="main.html" target="main_page"><i class="fa fa-circle-o"></i> Introduction</a></li>
         <li><a href="https://vchilkuri.github.io/examples/styles.html" target="main_page"><i class="fa fa-circle-o"></i> Advanced styling</a></li>
         <li><a href="https://vchilkuri.github.io/examples/complex.html" target="main_page"><i class="fa fa-circle-o"></i> Complex graphs</a></li>
@@ -112,16 +111,7 @@
 
 </div><!-- ./wrapper -->
 
-<!-- jQuery 3 -->
-<script src="components/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript">
-// A $( document ).ready() block.
-$( document ).ready(function() {
-  $( "ul#main_sidebar li a" ).click(function() {
-    $( "body" ).toggleClass( "sidebar-open" );
-  });
-});
-</script>
+<script src="https://vchilkuri.github.io/examples/libs/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
@@ -129,5 +119,15 @@ $( document ).ready(function() {
 <!-- SlimScroll -->
 <script src="components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <script src="docs.js"></script>
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+
+// A $( document ).ready() block.
+$j( document ).ready(function() {
+  $j( "ul#main_sidebar li a" ).click(function() {
+    $j( "body" ).toggleClass( "sidebar-open" );
+  });
+});
+</script>
 </body>
 </html>

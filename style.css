@@ -5,8 +5,31 @@ html, body{
   height: 100%;
   overflow-y: hidden;
 }
+.custom_menu{
+  position:relative;
+}
+.custom_menu .main-header{
+  display: inline-block;
+  position: absolute;
+}
+.custom_menu .main-header .navbar{
+  margin-left:0px;
+}
 .embed-responsive-16by9 {
     padding-bottom: 50.25%;
+}
+.skin-blue .sidebar-menu>li.header{
+    color: #fff!important;
+    background:transparent!important;
+    font-size: 16px!important;
+    padding: 15px 15px 15px 50px;
+}
+.content.body{
+    padding:10px 0px 0px 45px;
+}
+
+body.sidebar-collapse .embed-responsive-16by9{
+    padding-bottom: 45.25%;
 }
 .content{
   overflow-y: hidden;

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>ccNetViz | Implementations</title>
+  <title>Graph | Documentation</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
@@ -33,44 +33,34 @@
     }
     @media (max-width: 767px){
         .embed-responsive-16by9{
-          padding-bottom:140%;
+          position: initial;
+        }
+        .embed-responsive-item{
+          margin-top:45px;
         }
     }
   </style>
 </head>
 <body class="skin-blue" data-spy="scroll" data-target="#scrollspy">
 <div class="wrapper">
-
-  <header class="main-header">
-    <!-- Logo -->
-    <a href="index.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>ccNetViz</b></span>
-    </a>
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top" role="navigation">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-      <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
-          <li><a target="_blank" href="https://github.com/HelikarLab/ccNetViz">Github</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+  <div class="custom_menu">
+    <header class="main-header">
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+      </nav>
+    </header>
+  </div>  
   <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
+  <aside class="main-sidebar" style="padding-top:0px;">
     <!-- sidebar: style can be found in sidebar.less -->
     <div class="sidebar" id="scrollspy">
-
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="nav sidebar-menu" id="main_sidebar">
-        <li class="header">List of Examples</li>
+        <li class="header">Graph Documentation</li>
         <li class="active"><a href="main.html" target="main_page"><i class="fa fa-circle-o"></i> Introduction</a></li>
         <li><a href="https://vchilkuri.github.io/examples/styles.html" target="main_page"><i class="fa fa-circle-o"></i> Advanced styling</a></li>
         <li><a href="https://vchilkuri.github.io/examples/complex.html" target="main_page"><i class="fa fa-circle-o"></i> Complex graphs</a></li>
@@ -89,7 +79,7 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Main content -->
-    <div class="content body" style="padding:10px 8px;">
+    <div class="content body">
       <!-- 16:9 aspect ratio -->
       <div class="embed-responsive embed-responsive-16by9">
         <iframe src="main.html" name="main_page" class="embed-responsive-item" ></iframe>
@@ -97,20 +87,19 @@
     </div><!-- /.content -->
   </div><!-- /.content-wrapper -->
 
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 2.3.12
-    </div>
-    <strong>Copyright &copy; 2017.</strong> All rights
-    reserved.
-  </footer>
-
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
   <div class="control-sidebar-bg"></div>
 
 </div><!-- ./wrapper -->
 
+<footer class="main-footer">
+  <div class="pull-right hidden-xs">
+    <b>Version</b> 2.3.12
+  </div>
+  <strong>Copyright &copy; 2017.</strong> All rights
+  reserved.
+</footer>
 <script src="https://vchilkuri.github.io/examples/libs/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
